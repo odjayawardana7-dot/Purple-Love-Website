@@ -38,7 +38,7 @@ document.getElementById("sendWhatsApp").addEventListener("click", () => {
 
   // IMPORTANT: replace 94770000000 with your WhatsApp number in international format.
   // For Sri Lanka, use 94 followed by the number without the first 0.
-  const yourWhatsAppNumber = "94770000000";
+  const yourWhatsAppNumber = "94740324570";
   const message = `Hi Oshada 💜 It's ${name}!\n\nHow your surprise made me feel: ${mood}\n\nWhat I think:\n${thoughts}`;
   const url = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank", "noopener,noreferrer");
