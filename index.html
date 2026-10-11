@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7c3aed">
+  <title>For My Favourite Person 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true">💜 ✨ 💗 ✨ 💜</div>
+  <main class="app-shell">
+    <div class="top-label">A LITTLE SOMETHING JUST FOR YOU 💌</div>
+
+    <section class="page active" id="page1">
+      <div class="login-card">
+        <div class="big-heart">💜</div>
+        <p class="eyebrow">PRIVATE LITTLE WORLD</p>
+        <h1>Hey, my love</h1>
+        <p class="muted">This little surprise was made especially for you.</p>
+        <label for="herName">Your lovely name</label>
+        <input id="herName" type="text" placeholder="Type your name here" autocomplete="off">
+        <label for="passcode">Our little password <span class="optional">(optional)</span></label>
+        <input id="passcode" type="password" placeholder="A secret word or nickname">
+        <p class="hint" id="loginHint">Psst… the password is just for fun. You can leave it blank. 💕</p>
+        <button class="primary" id="loginNext">Open my surprise <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="page" id="page2">
+      <div class="gift-card">
+        <div class="card-ribbon">A GIFT FROM MY HEART</div>
+        <h2>My favourite person 💗</h2>
+        <div class="bear-frame">
+          <img class="bears-image" src="assets/couple-bears.png" alt="Cute white and brown cartoon bears cuddling and sharing hearts">
+        </div>
+        <p class="love-message">You aren't just my girlfriend—you’re my partner, my best friend, and my whole world. Your love makes every ordinary moment feel special, and my heart feels completely full whenever I’m with you. I love you more than words could ever truly express.</p>
+        <div class="emojis">🥹 💜 🧸 🫶🏻 💋 🌷 ♾️</div>
+      </div>
+      <button class="primary next-button" data-next="3">Next little note <span>→</span></button>
+    </section>
+
+    <section class="page" id="page3">
+      <div class="gift-card caring-card">
+        <div class="card-ribbon">A LITTLE REMINDER</div>
+        <h2>You are so precious to me 🫶</h2>
+        <div class="bear-frame">
+          <img class="bears-image" src="assets/couple-bears.png" alt="Cute cartoon bear couple showing affection">
+        </div>
+        <p class="love-message">Sometimes I look at you and wonder how I got so lucky. You bring so much comfort, light, and happiness into my world just by being yourself. Thank you for your caring heart, your constant support, and all the quiet moments that mean everything to me. You really are the best girlfriend I could ever ask for.</p>
+        <div class="emojis">🤍 🐻‍❄️ 🐻 💐 🥰 💞</div>
+      </div>
+      <button class="primary next-button" data-next="4">One more surprise <span>→</span></button>
+    </section>
+
+    <section class="page" id="page4">
+      <div class="content-card">
+        <p class="eyebrow">A LITTLE CRAFT IDEA 🎨</p>
+        <h2>Something cute for us</h2>
+        <p class="muted">I wanted to share this sweet little video with you. Maybe we can make something like this together. 💕</p>
+        <div class="video-frame" id="videoFrame">
+          <video controls playsinline preload="metadata">
+            <source src="assets/couple-craft-video.mp4" type="video/mp4">
+            Sorry, your browser can't play this video.
+          </video>
+        </div>
+        <p class="hint">If the video doesn't play, make sure <b>assets/couple-craft-video.mp4</b> is included when you upload the website.</p>
+      </div>
+      <button class="primary next-button" data-next="5">Tell me what you think <span>→</span></button>
+    </section>
+
+    <section class="page" id="page5">
+      <div class="content-card">
+        <div class="big-heart">💌</div>
+        <p class="eyebrow">YOUR TURN, MY LOVE</p>
+        <h2>What do you think? 💜</h2>
+        <p class="muted">Tell me anything that's on your heart. I'll listen, always.</p>
+        <label for="herThoughts">Your message</label>
+        <textarea id="herThoughts" rows="6" placeholder="Write what you feel here..."></textarea>
+        <label for="herMood">How did this make you feel?</label>
+        <select id="herMood">
+          <option value="🥹 Emotional">🥹 Emotional</option>
+          <option value="🥰 Loved">🥰 Loved</option>
+          <option value="😊 Happy">😊 Happy</option>
+          <option value="🤭 Shy">🤭 Shy</option>
+          <option value="💬 I want to talk">💬 I want to talk</option>
+        </select>
+        <button class="primary" id="sendWhatsApp">Send to me on WhatsApp <span>↗</span></button>
+        <p class="hint">WhatsApp will open with her message ready to send. She must tap Send in WhatsApp.</p>
+      </div>
+      <button class="secondary next-button" data-next="6">Finish 💗</button>
+    </section>
+
+    <section class="page" id="page6">
+      <div class="ending-card">
+        <div class="ending-hearts">💜 💗 💜</div>
+        <div class="ending-bears">🧸 🤎 🧸</div>
+        <p class="eyebrow">END OF THE SURPRISE</p>
+        <h1 id="endingTitle">I love you, always.</h1>
+        <p class="love-message">No website could ever explain how much you mean to me. I hope this made you smile, even just a little. Thank you for being you. Whatever life brings, I want to keep learning how to love you better. 💜</p>
+        <div class="emojis">🫶🏻 🌷 🥹 💞 ♾️</div>
+        <button class="primary" id="restart">See it again ↺</button>
+      </div>
+    </section>
+
+    <footer>Made with love, just for you <span>♥</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
